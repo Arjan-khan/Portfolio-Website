@@ -719,6 +719,11 @@ svg {
   display: flex;
   flex-direction: column;
 }
+.stat__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .stat__number {
   font-family: var(--font-mono);
   font-size: 1.9rem;
