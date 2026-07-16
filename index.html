@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjan Khan — Aspiring Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Arjan Anis Khan, a BCA student and aspiring software developer building meaningful software with Python, JavaScript, and the web."
+    />
+    <meta
+      name="keywords"
+      content="Arjan Anis Khan, software developer, BCA student, web developer, Pune, portfolio"
+    />
+    <meta name="author" content="Arjan Anis Khan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://arjan-khan.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Arjan Anis Khan — Aspiring Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Building meaningful software, one project at a time."
+    />
+    <meta property="og:image" content="profile.jpg" />
+    <meta property="og:url" content="https://arjan-khan.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Arjan Anis Khan — Aspiring Software Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Building meaningful software, one project at a time."
+    />
+    <meta name="twitter:image" content="profile.jpg" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F172A'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='54' font-weight='700' fill='%2338BDF8' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "",
+        });
+      })();
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ PAGE LOADER ============ -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__mark"><span>A</span><span>K</span></div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+
+    <!-- ============ SCROLL PROGRESS ============ -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <!-- ============ MOUSE GLOW (decorative, hidden on touch) ============ -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+      <nav class="navbar__inner">
+        <a
+          href="#home"
+          class="navbar__logo"
+          aria-label="Arjan Anis Khan — home"
+        >
+          <span class="navbar__logo-mark">AK</span>
+        </a>
+
+        <ul class="navbar__links" id="navLinks">
+          <li>
+            <a href="#home" class="nav-link active" data-section="home">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="navbar__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle light and dark theme"
+            title="Toggle theme"
+          >
+            <svg
+              class="icon icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+            <svg
+              class="icon icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="blob blob--one"></div>
+          <div class="blob blob--two"></div>
+          <div class="blob blob--three"></div>
+          <div class="grid-overlay"></div>
+          <canvas id="particles" aria-hidden="true"></canvas>
+        </div>
+
+        <div class="hero__inner container">
+          <div class="hero__content fade-up">
+            <p class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              Available for internships &amp; opportunities
+            </p>
+
+            <h1 class="hero__title">
+              Hi, I'm <span class="highlight">Arjan Anis Khan</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              <span id="typingText" class="typing-text"></span
+              ><span class="typing-cursor" aria-hidden="true">|</span>
+            </p>
+
+            <p class="hero__tagline">
+              Building meaningful software, one project at a time.
+            </p>
+
+            <div class="hero__cta">
+              <a href="resume.pdf" class="btn btn--primary magnetic" download>
+                <span>Download Resume</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3v13M7 11l5 5 5-5M5 21h14" />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/Arjan-khan"
+                class="btn btn--ghost magnetic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                  />
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat">
+                <span class="stat__number" data-count="2">0</span
+                ><span class="stat__plus">+</span>
+                <span class="stat__label">Projects Built</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="6">0</span>
+                <span class="stat__label">Languages &amp; Tools</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-count="2027">0</span>
+                <span class="stat__label">Expected Graduation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual fade-up" style="--delay: 0.15s">
+            <div class="profile-frame">
+              <div class="profile-frame__glow"></div>
+              <div class="profile-frame__ring"></div>
+              <img
+                src="profile.jpg"
+                alt="Portrait of Arjan Anis Khan"
+                class="profile-frame__img floating"
+                width="480"
+                height="480"
+                loading="eager"
+              />
+              <div class="profile-frame__badge">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Open to work
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#about"
+          class="scroll-cue"
+          aria-label="Scroll to About section"
+        >
+          <span>Scroll</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-head fade-up">
+            <p class="section-tag">About</p>
+            <h2 class="section-title">Who I am</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text fade-up">
+              <p>
+                I'm <strong>Arjan Anis Khan</strong>, a second-year BCA student
+                at <strong>Poona College</strong> with a strong interest in
+                software development and modern technology.
+              </p>
+              <p>
+                I enjoy solving problems through programming, exploring new
+                technologies, and building practical projects that sharpen my
+                skills along the way. I have a creative mindset, learn
+                continuously, and aim to build software that is both useful and
+                thoughtfully designed.
+              </p>
+              <p>
+                Right now, I'm focused on strengthening my foundations in
+                <strong>Python</strong>, <strong>JavaScript</strong>, web
+                development, <strong>Linux</strong>, and core software
+                engineering principles.
+              </p>
+
+              <div class="quick-facts">
+                <div class="quick-fact">
+                  <span class="quick-fact__label">Location</span>
+                  <span class="quick-fact__value"
+                    >Pune, Maharashtra, India</span
+                  >
+                </div>
+                <div class="quick-fact">
+                  <span class="quick-fact__label">Focus</span>
+                  <span class="quick-fact__value">Software Development</span>
+                </div>
+                <div class="quick-fact">
+                  <span class="quick-fact__label">Status</span>
+                  <span class="quick-fact__value">Open to internships</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__card fade-up" style="--delay: 0.1s">
+              <div class="edu-card tilt">
+                <div class="edu-card__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 10 12 5 2 10l10 5 10-5Z" />
+                    <path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" />
+                  </svg>
+                </div>
+                <p class="edu-card__eyebrow">Education</p>
+                <h3 class="edu-card__title">
+                  Bachelor of Computer Applications
+                </h3>
+                <p class="edu-card__org">Poona College</p>
+                <div class="edu-card__meta">
+                  <span>Expected Graduation</span>
+                  <strong>2027 – 2028</strong>
+                </div>
+                <div class="edu-card__progress">
+                  <div class="edu-card__progress-fill"></div>
+                </div>
+                <span class="edu-card__progress-label"
+                  >Currently in Year 2</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section-head fade-up">
+            <p class="section-tag">Skills</p>
+            <h2 class="section-title">What I work with</h2>
+            <p class="section-desc">
+              A growing toolkit, built one problem at a time.
+            </p>
+          </div>
+
+          <div class="skills__grid">
+            <div class="skill-card fade-up">
+              <h3 class="skill-card__title">Programming</h3>
+              <ul class="skill-list">
+                <li>
+                  <span>HTML5</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 85%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>CSS3</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 80%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>JavaScript</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 75%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>Python</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 70%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>C</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 80%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>C++</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 75%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-card fade-up" style="--delay: 0.08s">
+              <h3 class="skill-card__title">Frontend</h3>
+              <ul class="skill-list">
+                <li>
+                  <span>Responsive Design </span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 85%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>Flexbox</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 88%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>CSS Grid</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 80%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>DOM Manipulation</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 75%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-card fade-up" style="--delay: 0.16s">
+              <h3 class="skill-card__title">Backend &amp; Database</h3>
+              <ul class="skill-list">
+                <li>
+                  <span>Python <em>(Learning)</em></span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 70%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>MySQL <em>(Learning)</em></span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 45%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-card fade-up" style="--delay: 0.24s">
+              <h3 class="skill-card__title">Systems &amp; Tools</h3>
+              <ul class="skill-list">
+                <li>
+                  <span>Windows</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 90%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>Linux (Ubuntu)</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 30%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>Git &amp; GitHub</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 75%"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>VS Code</span>
+                  <div class="bar">
+                    <div class="bar__fill" style="--w: 92%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="learning-track fade-up">
+            <p class="learning-track__label">Currently learning</p>
+            <div class="learning-track__chips">
+              <span class="chip">Python</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Data Structures</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-head fade-up">
+            <p class="section-tag">Projects</p>
+            <h2 class="section-title">Things I've built</h2>
+            <p class="section-desc">Small projects, built to learn by doing.</p>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card tilt fade-up">
+              <div class="project-card__media">
+                <img
+                  src="project1.jpg"
+                  alt="Screenshot of the Rock Paper Scissors game project"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="https://arjan-khan.github.io/game/"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View live demo of Rock Paper Scissors"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14 21 3" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://github.com/Arjan-khan"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View source code on GitHub"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Rock Paper Scissors Game</h3>
+                <p class="project-card__desc">
+                  A browser-based Rock Paper Scissors game with score tracking
+                  and instant round results.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://arjan-khan.github.io/game/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="https://github.com/Arjan-khan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source Code →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card tilt fade-up" style="--delay: 0.12s">
+              <div class="project-card__media">
+                <img
+                  src="project2.jpg"
+                  alt="Screenshot of the Gold Price Calculator project"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="https://arjan-khan.github.io/GoldCalculator/"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View live demo of Gold Price Calculator"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14 21 3" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://github.com/Arjan-khan"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View source code on GitHub"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Gold Price Calculator</h3>
+                <p class="project-card__desc">
+                  A calculator that computes the total gold price including
+                  making charges and applicable taxes.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://arjan-khan.github.io/GoldCalculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="https://github.com/Arjan-khan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source Code →</a
+                  >
+                </div>
+              </div>
+            </article>
+            
+            <!-- for 3rd project -->
+             
+            <!-- <article class="project-card tilt fade-up" style="--delay: 0.24s">
+              <div class="project-card__media">
+                <img
+                  src="project3.jpg"
+                  alt="Screenshot of [Your Project Name]"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="YOUR_LIVE_DEMO_URL"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View live demo of [Project Name]"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <path d="M15 3h6v6" />
+                      <path d="M10 14 21 3" />
+                    </svg>
+                  </a>
+                  <a
+                    href="YOUR_GITHUB_URL"
+                    class="icon-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View source code on GitHub"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">[Your Project Name]</h3>
+                <p class="project-card__desc">
+                  [One or two sentences about what it does.]
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="YOUR_LIVE_DEMO_URL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo →</a
+                  >
+                  <a
+                    href="YOUR_GITHUB_URL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source Code →</a
+                  >
+                </div>
+              </div>
+            </article> -->
+
+            <article
+              class="project-card project-card--ghost fade-up"
+              style="--delay: 0.24s"
+            >
+              <div class="project-card__ghost-content">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+                <p>More projects coming soon</p>
+                <a
+                  href="https://github.com/Arjan-khan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Follow along on GitHub →</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-head fade-up">
+            <p class="section-tag">Contact</p>
+            <h2 class="section-title">Let's build something</h2>
+            <p class="section-desc">
+              Have an opportunity, project, or question? My inbox is open.
+            </p>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info fade-up">
+              <a
+                class="contact__item"
+                href="mailto:arjankhan0001@gmail.com"
+                id="emailItem"
+              >
+                <span class="contact__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 6-10 7L2 6" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__label">Email</span>
+                  <span class="contact__value" id="emailValue"
+                    >arjankhan0001@gmail.com</span
+                  >
+                </span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  id="copyEmailBtn"
+                  aria-label="Copy email address"
+                >
+                  <svg
+                    class="icon-copy"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="9" y="9" width="13" height="13" rx="2" />
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    />
+                  </svg>
+                  <svg
+                    class="icon-check"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </button>
+              </a>
+
+              <a class="contact__item" href="tel:+917020745076">
+                <span class="contact__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__label">Phone</span>
+                  <span class="contact__value">+91 70*** ***76</span>
+                </span>
+              </a>
+
+              <a
+                class="contact__item"
+                href="https://github.com/Arjan-khan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__label">GitHub</span>
+                  <span class="contact__value">github.com/Arjan-khan</span>
+                </span>
+              </a>
+
+              <a
+                class="contact__item"
+                href="https://www.linkedin.com/in/arjan-khan-16a52a401"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="linkedinItem"
+              >
+                <span class="contact__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__label">LinkedIn</span>
+                  <span class="contact__value">linkedin.com/in/arjan-khan</span>
+                </span>
+              </a>
+
+              <div class="contact__location">
+                <span class="contact__icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact__label">Location</span>
+                  <span class="contact__value">Pune, Maharashtra, India</span>
+                </span>
+              </div>
+            </div>
+
+            <form
+              class="contact-form fade-up"
+              id="contactForm"
+              style="--delay: 0.1s"
+              novalidate
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                  />
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                  />
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                />
+                <span class="form-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me a bit about it..."
+                ></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn--primary btn--block magnetic"
+                id="submitBtn"
+              >
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <div
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#home" class="footer__logo">AK<span>.</span></a>
+        <p class="footer__note">Designed &amp; built by Arjan Anis Khan.</p>
+        <div class="footer__socials">
+          <a
+            href="https://github.com/Arjan-khan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arjan-khan-16a52a401"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"
+              />
+            </svg>
+          </a>
+          <a href="mailto:arjankhan0001@gmail.com" aria-label="Email">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">
+          © <span id="year"></span> Arjan Anis Khan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15 12 9l-6 6" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
