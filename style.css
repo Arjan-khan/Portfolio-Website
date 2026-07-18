@@ -964,12 +964,6 @@ svg {
   background: var(--border-strong);
   overflow: hidden;
 }
-.edu-card__progress-fill {
-  height: 100%;
-  width: 45%;
-  border-radius: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-}
 .edu-card__progress-label {
   display: block;
   margin-top: 8px;
